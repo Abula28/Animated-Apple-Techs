@@ -252,7 +252,7 @@ export default {
   }
 
   .paragraph {
-    margin: 30px auto !important;
+    margin: 20px auto !important;
     p,
     &.second p,
     &.second .chip p {
@@ -292,6 +292,7 @@ export default {
   }
 
   .paragraph {
+    margin: 50px auto !important;
     width: 90% !important;
     p,
     &.second p,
