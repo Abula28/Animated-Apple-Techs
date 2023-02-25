@@ -22,7 +22,7 @@
       v-motion
       :initial="{ opacity: 0 }"
       :visibleOnce="{ opacity: 1 }"
-      :delay="3000"
+      :delay="1000"
       class="paragraph"
     >
       <p>
