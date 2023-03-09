@@ -15,7 +15,7 @@
       <a href="#ipad">iPad</a>
       <a href="#macBookAir">MacBook Air</a>
       <a href="#macBookPro">MacBook Pro</a>
-      <a href="#">iPhone</a>
+      <a href="#iphone">iPhone</a>
     </div>
   </nav>
 </template>
