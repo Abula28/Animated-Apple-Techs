@@ -64,8 +64,8 @@
 
         <div class="chip">
           <p>
-            <img src="/images/m1-icon.png" alt="m1" /> Supercharged by the
-            Apple M1 chip
+            <img src="/images/m1-icon.png" alt="m1" /> Supercharged by the Apple
+            M1 chip
           </p>
         </div>
       </div>
@@ -104,10 +104,40 @@
 
         <div class="chip">
           <p>
-            <img src="/images/m2_logo.png" alt="m1" /> Supercharged by the
-            Apple M2 chip
+            <img src="/images/m2_logo.png" alt="m1" /> Supercharged by the Apple
+            M2 chip
           </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="iphone" id="iphone">
+    <h1
+      v-motion
+      :initial="{ opacity: 0, y: 50 }"
+      :visibleOnce="{ opacity: 1, y: 0 }"
+      :delay="500"
+      class="airHeader"
+    >
+      iPhone 14 Pro
+    </h1>
+    <div class="player">
+      <video class="macbookPro" muted autoplay>
+        <source src="/videos/iphone.mp4" />
+      </video>
+
+      <div
+        v-motion
+        :initial="{ opacity: 0 }"
+        :visibleOnce="{ opacity: 1 }"
+        :delay="500"
+        class="paragraph third"
+      >
+        <p>
+          iPhone 14 Pro and iPhone 14 Pro Max
+          <span>From $999 or $41.62/mo. for 24 mo. before trade‑in*</span>
+        </p>
       </div>
     </div>
   </section>
@@ -227,6 +257,25 @@ export default {
 
 .pro {
   padding-top: 15%;
+}
+
+.iphone {
+  padding-top: 15%;
+}
+
+.third {
+  margin-top: 50px;
+  p {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    span{
+      color: grey;
+      font-size: 20px;
+    }
+  }
 }
 
 @media (max-width: 1500px) {
